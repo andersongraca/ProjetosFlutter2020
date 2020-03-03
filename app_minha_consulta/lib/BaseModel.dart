@@ -36,7 +36,7 @@ class BaseModel extends Model {
 
       // Load entities from database.
       
-      //entityList = await inDatabase.etAll();
+      entityList = await inDatabase.getAll();
 
       // Notify listeners that the data is available so they can paint themselves.
       notifyListeners();
