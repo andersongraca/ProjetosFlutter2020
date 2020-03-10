@@ -13,16 +13,11 @@ import 'package:app_minha_consulta/view/tela_menu.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatefulWidget {
-  
-
   @override
   _HomePageState createState() => _HomePageState();
 }
 
 class _HomePageState extends State<HomePage> {
-
-  
-  
   @override
   Widget build(BuildContext context) {
     print("## HomePage: Menu da aplicacao");
@@ -51,8 +46,8 @@ class _HomePageState extends State<HomePage> {
         body: TabBarView(
           children: [
             TelaMenu(),
-            Notas(),
             TelaCadastro(),
+            Notas(),
           ],
         ),
       ),
