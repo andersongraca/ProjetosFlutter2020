@@ -15,7 +15,7 @@ class Alergia extends StatelessWidget {
   /// Constructor.
   Alergia() {
 
-    print("##62 Alergias.constructor");
+    print("##62 Alergia(): constructor");
 
     // Initial load of data.
     alergiasModel.loadData("alergia", AlergiasDB.db);

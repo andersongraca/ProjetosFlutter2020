@@ -7,10 +7,10 @@ import "NotasModel.dart" show NotasModel, notasModel;
 
 
 /// ********************************************************************************************************************
-/// Tela de Notas
-/// 
+/// The Notes screen.
 /// ********************************************************************************************************************
 class Notas extends StatelessWidget {
+
 
   /// Constructor.
   Notas() {
@@ -18,7 +18,7 @@ class Notas extends StatelessWidget {
     print("##62 Notes.constructor");
 
     // Initial load of data.
-    //notasModel.loadData("notas", NotasDB.db);
+    notasModel.loadData("notas", NotasDB.db);
     //notasModel.loadData(inEntityType, inDatabase);
 
   } /* End constructor. */

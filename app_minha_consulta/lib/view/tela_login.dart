@@ -1,6 +1,8 @@
 import 'package:app_minha_consulta/view/home_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart' show Brightness, TextInputType;
+import 'package:app_minha_consulta/postgresDb.dart';
+import 'package:postgres/postgres.dart';
 
 class TelaLogin extends StatefulWidget {
   @override
@@ -12,8 +14,10 @@ class _LoginPageState extends State<TelaLogin> {
   final TextEditingController _cpfPacienteController = TextEditingController();
 
   @override
-  Widget build(BuildContext context) {
+  Future<Widget> build(BuildContext context) async {
     print("## TelaLogin: Iniciando a aplicacao");
+    var connection = new PostgreSQLConnection();
+    await   connection.open();
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
