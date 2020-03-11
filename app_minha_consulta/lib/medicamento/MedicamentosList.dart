@@ -74,7 +74,7 @@ class MedicamentosList extends StatelessWidget {
                                   : TextStyle(
                                       color: Theme.of(inContext)
                                           .textTheme
-                                          .headline1
+                                          .headline
                                           .color)),
                           subtitle: medicamento.dueDate == null
                               ? null
@@ -89,7 +89,7 @@ class MedicamentosList extends StatelessWidget {
                                       : TextStyle(
                                           color: Theme.of(inContext)
                                               .textTheme
-                                              .headline1
+                                              .headline
                                               .color)),
                           // Edit existing medicamento.
                           onTap: () async {
